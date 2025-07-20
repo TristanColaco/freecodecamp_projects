@@ -5,6 +5,12 @@
         <title>CatPhotoApp</title>
     </head>
     <body>
+        <header>
+            <h1>Welcome to CatPhotoApp</h1>
+            <nav>
+                <a href="https://tristancolaco.github.io/freecodecamp_projects/">Home</a>
+            </nav>
+        </header>
         <main>
             <h1> CatPhotoApp</h1>
             <section>
@@ -36,9 +42,31 @@
                 </ol>
                 <figure>
                     <img src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
-                    <figcaption>Cats <strong>hate</strong>other cats</figcaption>
+                    <figcaption>Cats <strong>hate </strong> other cats</figcaption>
                 </figure>
             </section>
+            <section>
+                <h2>Cat Form</h2>
+                <form action = "https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>Is you cat an indoor or outdoor cat?</legend>
+                        <input checked id="indoor" name="indoor-outdoor" type ="radio" value="indoor"> <label for="indoor">Indoor</label>
+                        <input id="outdoor" name="indoor-outdoor" type="radio" value="outdoor"><label for="outdoor">Outdoor</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What is your cat's personality?</legend>
+                        <input checked id="loving" name="personality" type="checkbox" value="loving"><label for="loving">Loving</label>
+                        <input id="lazy" name="personality" type="checkbox" value="lazy"><label for="lazy">Lazy</label>
+                        <input id="energetic" name="personality" type="checkbox" value="energetic"><label for ="energetic">Energetic</label>
+                    </fieldset>
+                    <input type="text" name="catphotourl" placeholder="Enter cat photo url">
+                    <button type ="submit">Submit</button>
+                </form>
+            </section>
             </main>
+            <footer>
+                <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+                <p>Created by - Tristan Colaco</p>
+            </footer>
     </body>
 </html>
